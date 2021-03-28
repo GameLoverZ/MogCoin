@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[mogcoin.qt-translation-017x]
+file_filter = src/qt/locale/mogcoin_<lang>.ts
+source_file = src/qt/locale/mogcoin_en.ts
+source_lang = en

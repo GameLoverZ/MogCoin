@@ -1,0 +1,33 @@
+# /etc/conf.d/mogcoind: config file for /etc/init.d/mogcoind
+
+# Config file location
+#MOGCOIND_CONFIGFILE="/etc/mogcoin/mogcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $MOGCOIND_USER)
+#MOGCOIND_PIDDIR="/var/run/mogcoind"
+
+# What filename to give the pidfile
+#MOGCOIND_PIDFILE="${MOGCOIND_PIDDIR}/mogcoind.pid"
+
+# Where to write mogcoind data (be mindful that the blockchain is large)
+#MOGCOIND_DATADIR="/var/lib/mogcoind"
+
+# User and group to own mogcoind process
+#MOGCOIND_USER="mogcoin"
+#MOGCOIND_GROUP="mogcoin"
+
+# Path to mogcoind executable
+#MOGCOIND_BIN="/usr/bin/mogcoind"
+
+# Nice value to run mogcoind under
+#MOGCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#MOGCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for mogcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+MOGCOIND_SIGTERM_TIMEOUT=60
